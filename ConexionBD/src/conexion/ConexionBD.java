@@ -19,4 +19,8 @@ public class ConexionBD {
     public Connection getConexion() {
         return conexion;
     }
+    
+    public void CloseConexion() throws SQLException{
+    	this.conexion.close();
+    }
 }
